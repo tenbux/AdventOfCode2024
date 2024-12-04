@@ -36,6 +36,7 @@ for report in reportList:
     # Added in part 2
     else:
         for i in range(len(report)):
+            # Remove each level and test again
             modified_report = report[:i] + report[i + 1:]
             if is_safe(modified_report):
                 total_safe_reports += 1
